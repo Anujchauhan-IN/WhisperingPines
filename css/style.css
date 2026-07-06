@@ -1,0 +1,20 @@
+:root {
+    /* Colors */
+    --primary-color: #2f5d50;
+    --primary-dark: #1e3d34;
+    --primary-light: #4f8a74;
+
+    --background-light: #f5f8f6;
+    --background-white: #ffffff;
+
+    --text-dark: #2b2b2b;
+    --text-light: #666666;
+
+    /* Effects */
+    --overlay: rgba(0, 0, 0, 0.35);
+    --shadow: rgba(0, 0, 0, 0.15);
+
+    /* Common Values */
+    --border-radius: 10px;
+    --section-padding: 80px;
+}
