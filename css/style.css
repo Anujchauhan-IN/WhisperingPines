@@ -1,8 +1,8 @@
 :root {
     /* Colors */
-    --primary-color: #2f5d50;
-    --primary-dark: #1e3d34;
-    --primary-light: #4f8a74;
+    --primary-color: #3f7d58;
+    --primary-dark: #234232;
+    --primary-light: #5f9b76;
 
     --background-light: #f5f8f6;
     --background-white: #ffffff;
@@ -17,4 +17,124 @@
     /* Common Values */
     --border-radius: 10px;
     --section-padding: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+}
+
+header {
+    background-color: var(--primary-dark);
+}
+
+nav h1 {
+    color: var(--background-white);
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--background-white);
+
+    padding: 8px 14px;
+    border-radius: var(--border-radius);
+
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+nav a:active {
+    background-color: var(--primary-color);
+}
+
+.hero {
+    height: 100vh;
+    padding: var(--section-padding);
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(var(--overlay), var(--overlay)),
+        url("../images/image2.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-tag {
+    color: var(--background-white);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    color: var(--background-white);
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    color: var(--background-white);
+
+    line-height: 1.7;
+
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background-color: var(--primary-color);
+    color: var(--background-white);
+
+    padding: 15px 30px;
+
+    border-radius: var(--border-radius);
+
+    transition:
+        background-color 0.3s,
+        transform 0.3s;
+}
+
+.btn:active {
+    background-color: var(--primary-light);
+    transform: scale(1.05);
 }
