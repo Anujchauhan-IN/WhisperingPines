@@ -286,3 +286,7 @@ nav a:active {
 
     display: block;
 }
+.gallery-btn {
+    text-align: center;
+    /* border: 2px solid; */
+}
